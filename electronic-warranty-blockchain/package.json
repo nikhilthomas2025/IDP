@@ -1,0 +1,22 @@
+{
+  "name": "electronic-warranty-blockchain",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Blockchain-based electronic product warranty system (Solidity + Hardhat + React + Node/Express + MongoDB)",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat ignition deploy ignition/modules/ElectronicWarranty.ts --network localhost",
+    "deploy:sepolia": "hardhat ignition deploy ignition/modules/ElectronicWarranty.ts --network sepolia",
+    "sync-abi": "node scripts/sync-abi.js"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.0.2",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  }
+}
